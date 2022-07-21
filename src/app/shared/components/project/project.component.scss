@@ -1,0 +1,38 @@
+//Variables
+$main-color: #dc3545;
+$second-color: #3583dc;
+
+.project {
+  width: 250px;
+  height: 350px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: $second-color;
+    transition: all 0.2s;
+
+    &:hover {
+      opacity: 0.9;
+      color: $main-color;
+    }
+
+    .project-image {
+      height: 250px;
+      margin-bottom: 15px;
+      box-shadow: 0px 0px 10px 0px #5c5c5ce3;
+      background-color: #000;
+    }
+
+    h3 {
+      font-size: 3rem;
+    }
+  }
+
+  p {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
+}

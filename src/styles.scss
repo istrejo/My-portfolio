@@ -1,1 +1,47 @@
-/* You can add global styles to this file, and also import other style files */
+//Variables
+$header-color: #dc3545;
+$second-color: #3583dc;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Jetbrains Mono", monospace;
+}
+
+img {
+  width: 100%;
+}
+
+.rojo {
+  color: $header-color;
+}
+
+.azul {
+  color: $second-color;
+}
+
+.rojo:hover {
+  color: $second-color;
+}
+
+.azul:hover {
+  color: $header-color;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Jetbrains Mono", monospace;
+
+  &:hover {
+    color: $header-color;
+  }
+}

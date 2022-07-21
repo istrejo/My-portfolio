@@ -1,0 +1,68 @@
+$grey: #e0e6eb;
+$text-color: #303031;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 20px;
+}
+
+h2 {
+  color: $text-color;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+h3,
+h4 {
+  font-size: 2.6rem;
+  letter-spacing: 4px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+.section1 {
+  padding: 100px 0;
+  color: $text-color;
+
+  h3,
+  h4 {
+    margin: 10px 0;
+  }
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  margin: 45px 0;
+  background: #ccc;
+}
+
+//Skills
+
+.section2 {
+  padding: 100px 0;
+  background-color: #2e4053;
+  color: #fafafa;
+
+  h2 {
+    color: $grey;
+  }
+
+  h3 {
+    font-size: 2.2rem;
+  }
+}
+
+.tools-container h3 {
+  font-size: 3rem;
+  color: #fafafa;
+}

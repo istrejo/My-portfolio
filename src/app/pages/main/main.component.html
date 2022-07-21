@@ -1,0 +1,100 @@
+<section class="section1" id="portafolio">
+  <div class="container">
+    <h2 class="text-left title">Portafolio</h2>
+    <div class="divider"></div>
+    <div class="row">
+      <app-project
+        class="col-xs-12 col-sm-6 col-md-6"
+        *ngFor="let card of cards"
+        [project]="card"
+      ></app-project>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section class="section2" id="skills">
+  <div class="container">
+    <h2 class="text-left">skills</h2>
+    <div class="divider"></div>
+    <div class="row">
+      <div class="col-xs-12 col-md-4 p-xs-3">
+        <h3><strong class="rojo fab fa-html5"></strong> HTML5</h3>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <h3><strong class="rojo fab fa-css3"></strong> CSS3</h3>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <h3><strong class="rojo fab fa-js"></strong> JavaScript</h3>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <h3><strong class="rojo fab fa-git"></strong> Git</h3>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <h3><strong class="rojo fab fa-sass"></strong> Sass</h3>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <h3><strong class="rojo fab fa-angular"></strong> Angular</h3>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <h3>
+          <strong class="rojo fab fa-wordpress-simple"></strong> WordPress
+        </h3>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <h3><strong class="rojo fab fa-bootstrap"></strong> Bootstrap</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section1" id="contacto">
+  <div class="container">
+    <h2 class="title">Contáctame</h2>
+    <div class="divider"></div>
+    <div class="row text-center">
+      <div class="col-xs-12 col-md-6">
+        <div class="card mb-3">
+          <h4 class="">
+            <span class="rojo fab fa-whatsapp-square"></span>
+            (+58) 426 3293 039
+          </h4>
+        </div>
+        <div class="card mb-3">
+          <h4 class="">
+            <span class="rojo far fa-envelope"></span>
+            ISTREJO2106<span class="azul">@GMAIL.COM</span>
+          </h4>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="card mb-3">
+          <h4 class="">
+            <span class="rojo fab fa-gitlab">
+              <a
+                href="https://gitlab.com/istrejo"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitLab
+              </a>
+            </span>
+          </h4>
+        </div>
+        <div class="card mb-3">
+          <h4 class="">
+            <a
+              href="https://www.linkedin.com/in/alejandro-trejo-rivera-897155201/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="rojo fab fa-linkedin"></span>
+
+              LinkedIn
+            </a>
+          </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
