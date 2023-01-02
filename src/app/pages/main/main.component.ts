@@ -12,24 +12,12 @@ export class MainComponent implements OnInit {
       title: 'Golf People',
       image: './assets/proyects/golfpeople.png',
       url: 'https://golf-people.web.app',
-      description: 'Front-End (en dasarrollo)',
+      description: 'IONIC Developer',
     },
     {
       title: 'Shopping List',
       image: './assets/proyects/shopping-list.png',
       url: 'https://aplicaiones-angular.firebaseapp.com/',
-      description: 'Front-End',
-    },
-    {
-      title: 'RickAndMortyAPP',
-      image: './assets/proyects/rickAndMortyAPP.png',
-      url: 'https://aplicaiones-angular.web.app/home',
-      description: 'Front-End',
-    },
-    {
-      title: 'WikiSearchAPP',
-      image: './assets/proyects/wikisearch.png',
-      url: 'https://wikisearchapp.web.app/',
       description: 'Front-End',
     },
   ];
