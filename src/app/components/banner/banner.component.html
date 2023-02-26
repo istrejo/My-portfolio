@@ -1,0 +1,19 @@
+<div class="home">
+  <div class="container">
+    <div class="myself">
+      <h3 class="subtitle">Welcome to my world</h3>
+      <div class="img-container"></div>
+
+      <h3>Hi, I'm Alejandro Trejo</h3>
+
+      <ul class="dynamic-txts">
+        <li *ngFor="let skill of skills" [style.--steps]="skill.length">
+          <span>{{ skill }}</span>
+        </li>
+      </ul>
+
+      <!-- <h1 class="title rwiting">Web Developer</h1> -->
+      <p>I'm a Front-end Angular & IONIC Developer based in Venezuela.</p>
+    </div>
+  </div>
+</div>

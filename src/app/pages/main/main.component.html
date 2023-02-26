@@ -1,4 +1,4 @@
-<section class="section1" id="portafolio">
+<section class="section1" id="portfolio">
   <div class="container">
     <h2 class="text-left title">Portafolio</h2>
     <div class="divider"></div>
@@ -19,30 +19,22 @@
     <div class="divider"></div>
     <div class="row">
       <div class="col-xs-12 col-md-4 p-xs-3">
-        <h3><strong class="rojo fab fa-html5"></strong> HTML5</h3>
-      </div>
-      <div class="col-xs-12 col-md-4">
-        <h3><strong class="rojo fab fa-css3"></strong> CSS3</h3>
-      </div>
-      <div class="col-xs-12 col-md-4">
-        <h3><strong class="rojo fab fa-js"></strong> JavaScript</h3>
-      </div>
-      <div class="col-xs-12 col-md-4">
-        <h3><strong class="rojo fab fa-git"></strong> Git</h3>
-      </div>
-      <div class="col-xs-12 col-md-4">
-        <h3><strong class="rojo fab fa-sass"></strong> Sass</h3>
-      </div>
-      <div class="col-xs-12 col-md-4">
-        <h3><strong class="rojo fab fa-angular"></strong> Angular</h3>
-      </div>
-      <div class="col-xs-12 col-md-4">
-        <h3>
-          <strong class="rojo fab fa-wordpress-simple"></strong> WordPress
+        <h2 class="rojo">Languajes</h2>
+        <h3 *ngFor="let language of languages">
+          <strong [class]="language.icon"></strong> {{ language.name }}
         </h3>
       </div>
-      <div class="col-xs-12 col-md-4">
-        <h3><strong class="rojo fab fa-bootstrap"></strong> Bootstrap</h3>
+      <div class="col-xs-12 col-md-4 p-xs-3">
+        <h2 class="rojo">Frameworks</h2>
+        <h3 *ngFor="let framework of frameworks">
+          <strong [class]="framework.icon"></strong> {{ framework.name }}
+        </h3>
+      </div>
+      <div class="col-xs-12 col-md-4 p-xs-3">
+        <h2 class="rojo">Tools</h2>
+        <h3 *ngFor="let tool of tools">
+          <strong [class]="tool.icon"></strong> {{ tool.name }}
+        </h3>
       </div>
     </div>
   </div>
