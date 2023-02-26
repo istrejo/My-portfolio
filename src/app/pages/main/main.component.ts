@@ -1,5 +1,7 @@
-import { Component, Input, Output, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
+import { DataService } from 'src/app/services/data.service';
 import { Project } from './../../core/models/project.model';
+import { Data } from '../../core/models/data.interface';
 
 @Component({
   selector: 'app-main',
@@ -7,6 +9,10 @@ import { Project } from './../../core/models/project.model';
   styleUrls: ['./main.component.scss'],
 })
 export class MainComponent implements OnInit {
+  private dataSvc = inject(DataService);
+  languages: any[];
+  frameworks: any[];
+  tools: any[];
   cards: Project[] = [
     {
       title: 'Golf People',
@@ -24,5 +30,15 @@ export class MainComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.dataSvc.getSkills().subscribe(({ languages, frameworks, tools }) => {
+      console.log(
+        '🚀 ~ file: main.component.ts:35 ~ MainComponent ~ this.dataSvc.getSkills ~ frameworks',
+        frameworks
+      );
+      this.languages = languages;
+      this.frameworks = frameworks;
+      this.tools = tools;
+    });
+  }
 }

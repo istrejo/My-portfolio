@@ -1,0 +1,46 @@
+{
+  "languages": [
+    {
+      "name": "JavaScript",
+      "icon": "devicon-javascript-plain colored"
+    },
+    {
+      "name": "TypeScript",
+      "icon": "devicon-typescript-plain colored"
+    },
+    {
+      "name": "html",
+      "icon": "devicon-html5-plain colored"
+    },
+    {
+      "name": "css",
+      "icon": "devicon-css3-plain colored"
+    }
+
+  ],
+  "frameworks": [
+    {
+      "name": "Angular",
+      "icon": "devicon-angularjs-plain colored"
+    },
+    {
+      "name": "Ionic",
+      "icon": "devicon-ionic-original colored"
+    }
+  ], 
+  "tools": [
+    {
+      "name": "Git",
+      "icon": "devicon-git-plain colored"
+    },
+    {
+      "name": "GitHub",
+      "icon": "devicon-github-original colored"
+    },
+    {
+      "name": "GitLab",
+      "icon": "devicon-gitlab-plain colored"
+    }
+    
+  ]
+}
