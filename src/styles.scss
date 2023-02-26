@@ -1,6 +1,5 @@
-//Variables
-$header-color: #dc3545;
-$second-color: #3583dc;
+@import './variables.scss';
+
 
 * {
   box-sizing: border-box;
@@ -14,34 +13,11 @@ html {
 }
 
 body {
-  font-family: "Jetbrains Mono", monospace;
+  font-family: 'Montserrat', sans-serif;
+  background: $background;
+  color: $font;
 }
 
-img {
-  width: 100%;
-}
-
-.rojo {
-  color: $header-color;
-}
-
-.azul {
-  color: $second-color;
-}
-
-.rojo:hover {
-  color: $second-color;
-}
-
-.azul:hover {
-  color: $header-color;
-}
-
-a {
-  text-decoration: none;
-  font-family: "Jetbrains Mono", monospace;
-
-  &:hover {
-    color: $header-color;
-  }
+p {
+  font-size: 1.6rem;
 }

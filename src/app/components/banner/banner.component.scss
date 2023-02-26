@@ -1,0 +1,144 @@
+@import '../../../variables.scss';
+
+
+
+
+.home {
+  display: flex;
+  padding-top: 15rem;
+  width: 100%;
+  font-family: $font-secondary;
+  // margin-top: 118.75px;
+
+  .myself {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+
+    .subtitle {
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 3px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    h5 {
+      font-size: 2rem;
+    }
+
+    h1 {
+      font-family: $font-primary;
+      color: #fff;
+      font-size: 4.8rem;
+      font-weight: 600;
+      margin-bottom: 2.2rem;
+      text-align: center;
+
+      // .title-main {
+      //   font-size: 6rem;
+      //   font-weight: bold;
+
+      //   span {
+      //     color: $green;
+      //   }
+      // }
+    }
+
+    .rwiting {
+      display: inline-block;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 1rem solid #fff;
+      width: 14ch;
+      margin-left: 1.2rem;
+      color: $green;
+      animation: typing 2s steps(14) forwards,
+        blink 0.5s infinite step-end alternate;
+    }
+
+    .dynamic-txts {
+      height: 45px;
+      line-height: 50px;
+      // background: red;
+      overflow: hidden;
+
+      li {
+        color: $green;
+        list-style: none;
+        font-size: 4.5rem;
+        color: $green;
+        // position: relative;
+        // top: 0;
+        // animation: slide 1.5s steps(3) infinite;
+
+
+        span {
+          position: relative;
+          margin: auto;
+
+
+          &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: calc(100%);
+            width: 100%;
+            background: $background;
+            border-left: 2px solid #fff;
+            animation: typing 2s steps(var(--steps)) infinite;
+          }
+
+        }
+
+
+      }
+    }
+
+    .description {
+      line-height: 30px;
+      opacity: 0.9;
+      padding-right: 16%;
+    }
+
+    .img-container {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      background-color: #fff;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
+
+@keyframes slide {
+  100% {
+    top: -160px;
+  }
+}
+
+// @keyframes typing {
+//   from {
+//     width: 0;
+//   }
+
+//   to {
+//     width: 14ch;
+//   }
+// }
+
+// @keyframes blink {
+//   50% {
+//     border-color: transparent;
+//   }
+// }
